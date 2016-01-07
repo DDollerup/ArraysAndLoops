@@ -1,0 +1,62 @@
+﻿@model List<ArraysAndLoops.Models.GameArticle>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowAllArticles</title>
+</head>
+<body>
+    <div>
+        <table>
+            @foreach (ArraysAndLoops.Models.GameArticle article in Model)
+            {
+                <tr>
+                    <td>
+                        Game Article ID:
+                    </td>
+                    <td>
+                        @article.GameArticleID
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        @article.Name
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Studio:
+                    </td>
+                    <td>
+                        @article.Studio
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Release Date:
+                    </td>
+                    <td>
+                        @article.ReleaseDate
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PG Rating:
+                    </td>
+                    <td>
+                        @article.PGRating
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+﻿@model ArraysAndLoops.Models.GameArticle
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    Game Article ID:
+                </td>
+                <td>
+                    @Model.GameArticleID
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    @Model.Name
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Studio:
+                </td>
+                <td>
+                    @Model.Studio
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Release Date:
+                </td>
+                <td>
+                    @Model.ReleaseDate
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PG Rating:
+                </td>
+                <td>
+                    @Model.PGRating
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
